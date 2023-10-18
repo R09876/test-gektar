@@ -1,0 +1,71 @@
+@import "fonts.scss";
+
+//variables
+
+$color-arapawa: #274562;
+$ff-bebas: "BebasNeuePro", "Arial", sans-serif;
+
+//uikit-variables
+
+$global-font-size: 20px;
+$global-line-height: 1.4;
+$global-font-family: "OpenSans", "Arial", sans-serif;
+$global-2xlarge-font-size: 3.4rem;
+$global-color: $color-arapawa;
+$global-primary-background: $color-arapawa;
+$global-border: $color-arapawa;
+$global-emphasis-color: $color-arapawa;
+
+$base-h1-line-height: 1;
+$base-heading-font-weight: 700;
+$base-heading-font-family: $ff-bebas;
+$base-margin-vertical: 25px;
+
+$container-max-width: 1790px;
+
+$dotnav-item-active-background: #ffffff;
+$dotnav-item-background: rgba(177, 195, 207, 0.70);
+$dotnav-item-width: 20px;
+$dotnav-item-border-width: 0;
+
+$grid-gutter-vertical-l: 25px;
+
+$subnav-item-color: #b1c3cf;
+$subnav-item-font-size: $global-font-size;
+$subnav-margin-horizontal: 0;
+$subnav-pill-item-padding-vertical: 8px;
+$subnav-pill-item-padding-horizontal: $subnav-pill-item-padding-vertical * 2;
+
+$padding-padding-l: 30px;
+
+$button-font-size: 1.2rem;
+$button-line-height: 1;
+
+//uikit-styles
+
+@import "uikit/variables-theme.scss";
+@import "uikit/mixins-theme.scss";
+
+//uikit-mixins
+@mixin hook-button-default {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: $ff-bebas;
+  border: $global-border-width solid $global-border;
+}
+
+@mixin hook-base-h1 {
+  letter-spacing: 4.2px;
+}
+
+.min-height {
+  min-height: 350px;
+}
+
+@media (min-width: $breakpoint-xlarge) {
+  .min-height {
+    min-height: 417px;
+  }
+}
+
+@import "uikit/uikit.scss";
